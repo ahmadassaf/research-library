@@ -1,0 +1,138 @@
+.deck-container {
+  background: #fff;
+  width: 90%;
+}
+.deck-container .slide {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #fff;
+  color: #000;
+  font-size: 30pt;
+}
+.deck-container .slide > .outer > .inner {
+  /* most projectors offer only a 1024x768 resolution */
+  /* width = 1024px minus two 48px paddings */
+  width: 928px;
+  height: 768px;
+  overflow: hidden;
+  /* enable absolutely positioned elements inside slide */
+  position: relative;
+}
+.deck-container .slide > .outer {
+  /* center slide */
+  width: 928px;
+  margin: 0 auto;
+}
+.deck-container .slide h1 {
+  position: static;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+  margin: .3em 0;
+  padding: 0;
+  font-size: 2em;
+}
+.deck-container .slide h2 {
+  border-bottom: none;
+  position: static;
+  font-size: 1.3em;
+}
+.deck-container .slide h3 {
+  font-size: 1em;
+  margin: .5em 0 0;
+}
+.deck-container .slide h4 {
+  font-size: 1em;
+  font-weight: normal;
+  margin: .5em 0 0;
+}
+.deck-container .slide p {
+  margin-bottom: .2em;
+}
+.deck-container .slide ul {
+  list-style: none;
+}
+.deck-container .slide li {
+  padding: 0;
+  margin: 1em 0 .5em;
+}
+.deck-container .slide li li {
+  margin: .4em 0 .5em;
+  color: #666666;
+}
+.deck-container .slide li ul,
+.deck-container .slide li ol {
+  font-size: 90%;
+}
+
+.deck-container .slide ul.inline > li {
+  float: left;
+}
+.deck-container .slide ul.inline > li:before {
+  content: "—";
+}
+.deck-container .slide ul.inline > li:first-child:before {
+  content: "";
+}
+.deck-container .slide ul.inline:after {
+	content: ".";
+	display: block;
+	clear: left;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+	margin-bottom: -.5em;
+}
+
+.deck-container a {
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
+.deck-container a[href^="#"], .deck-container #title a {
+  color: inherit;
+  border-bottom: none;
+}
+.deck-container a:hover {
+  color: #4386E6 !important;
+  border-bottom: 1px solid !important;
+}
+
+.deck-container figure {
+  margin: 0 .5em;
+}
+
+.deck-container .small {
+  font-size: 80%;
+}
+
+.deck-container .tiny {
+  font-size: 40%;
+}
+
+.deck-container .right {
+  float: right;
+  margin: .3em 0 0 .5em;
+}
+
+.deck-container p.authors {
+  text-align: center;
+  margin: 1em 0 0;
+}
+
+.deck-container p.affiliation {
+  text-align: center;
+  margin: 0 0 1em;
+}
+
+.deck-container .background {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  z-index: -500;
+}
+
+abbr {
+  text-transform: lowercase;
+  font-variant: small-caps !important;
+}

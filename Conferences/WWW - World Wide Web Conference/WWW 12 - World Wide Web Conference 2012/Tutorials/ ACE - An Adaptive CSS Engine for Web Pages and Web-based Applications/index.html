@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<!--
+  Using Google HTML5 slide template from http://code.google.com/p/html5slides/
+  Patches available at http://code.google.com/p/html5slides/issues/detail?id=28
+-->
+<html>
+  <head>
+    <title>ACE presentation at WWW'12</title>
+    <meta charset="utf-8">
+    <script src="slides.js"></script>
+  </head>
+
+  <body style="display: none">
+
+    <section class="slides layout-regular template-default">
+
+      <article>
+        <h1>ACE: An Adaptive CSS Engine for Web Pages and Web-based Applications</h1>
+        <p><strong>Luis A. Leiva</strong></p>
+        <p class="small nm">
+          Departament de Sistemes Informàtics i Computació<br/>
+          Institut Tecnològic d'Informàtica<br/>
+          Universitat Politècnica de València (Spain)<br/>          
+          <tt>llt@acm.org</tt>
+        </p>
+      </article>
+
+      <article id="relwork">
+        <h2>So far, at <em>WWW '12</em>:</h2>
+        <ul class="build">
+          <li>Implicit In-page Interaction</li>
+          <li>Interactive Hypervideo Visualization</li>
+          <li><strong>Adaptive CSS Engine</strong></li>
+        </ul>
+      </article>
+      
+      <article id="ToC">
+        <h2>Outline</h2>
+        <ol>
+          <li><a href="#intro" class="goto-id">Introduction</a></li>
+          <li><a href="#relwork" class="goto-id">Related Work</a></li>
+          <li><a href="#system" class="goto-id">System Overview</a></li>
+          <li><a href="#examples" class="goto-id">Examples</a></li>          
+          <li><a href="#eval" class="goto-id">Evaluation</a></li>
+          <li><a href="#future" class="goto-id">Future Work</a></li>
+        </ol>
+      </article>
+
+      <article id="intro" class="fill center">
+        <img height="100%" width="100%" src="figs/devices.jpg" />
+        <p class="bottom imgcredit white">image by Dion Almaer @ almaer.com</p>
+      </article>
+      
+      <article class="fill center">
+        <img height="100%" width="100%" src="figs/crowd.jpg" />
+        <p class="bottom imgcredit white">image by Adam Sage @ blogs.rti.org</p>
+      </article>
+            
+      <article id="relwork">
+        <h2>Related Work</h2>
+        <ul class="build">
+          <li>Ivory et al., 2002</li>
+          <li>Tsandilas and Schraefel, 2003</li>
+          <li>Kurniawan et al., 2006</li>
+          <li>Bila et al., 2007</li>
+        </ul>
+      </article>
+
+      <article>
+        <h2>System Overview</h2>
+        <h3>Framework</h3>
+        <div class="mt center">
+          <img class="mb" src="figs/ace-diagram.png" />
+          <p>ACE modifies <strong>numerical</strong> CSS properties</p>
+        </div>
+      </article>
+
+      <article>
+        <iframe src="http://player.vimeo.com/video/32981440" frameborder="0" 
+                width="100%" height="80%" class="mt"
+                webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+        </iframe>      
+      </article>
+            
+      <article>
+        <h2>System Overview</h2>
+        <h3>User Interaction Protocol</h3>
+        <ol class="mt build">
+          <li>User enters
+            <ul class="build">
+              <li>if previous user info, <strong>restyle</strong></li>
+              <li>start event tracking</li>
+            </ul>
+          </li>            
+          <li>User leaves
+            <ul>
+              <li>store interaction data</li>
+            </ul>
+          </li>
+        </ol>          
+      </article>
+
+      <article id="system" class="smaller">
+        <h2>System Overview</h2>
+        <table class="center fixed build">
+        <tr>
+          <td colspan="3"><strong>Session #1</strong></td>        
+        </tr>
+        <tr>
+          <td>initial design</td>
+          <td>cursor moves</td>
+          <td>redesign</td>
+        </tr>
+        <tr>
+          <td><img src="figs/web-list-crop-normal.jpg" /></td>
+          <td><img src="figs/web-list-crop-normal-track.jpg" /></td>
+          <td><img src="figs/web-list-crop-adapted1.jpg" /></td>
+        </tr>
+        </table>
+        <table class="center fixed build">
+        <tr>
+          <td colspan="3"><strong>Session #2</strong></td>
+        </tr>        
+        <tr>
+          <td>recovered design</td>
+          <td>move + click + keypress</td>
+          <td>redesign</td>
+        </tr>
+        <tr>
+          <td><img src="figs/web-list-crop-adapted1.jpg" /></td>
+          <td><img src="figs/web-list-crop-adapted1-track.jpg" /></td>
+          <td><img src="figs/web-list-crop-adapted2.jpg" /></td>
+        </tr>         
+        </table>
+      </article>
+                          
+      <article>
+        <h2>System Overview</h2>
+        <h3>API (the important parts)</h3>
+        <pre><strong>ACE</strong>.listen(objEvts, <em>[keepDefaults]</em>).<strong>adapt</strong>(objElems, <em>[domContext]</em>);</pre>
+        <pre>
+.listen({
+  "eventType1": priorityNum, 
+  "eventTypeN": priorityNum
+}, true)</pre>
+        <pre>
+.adapt({
+  "selector1": ["property1", ..., "propertyN"],
+  "selectorN": ["property1", ..., "propertyN"]
+}, window.document)</pre>
+      </article>
+
+      <article>
+        <h2>System Overview</h2>
+        <h3>API examples</h3>
+        <div class="build">
+        <pre class="fl mr">
+.listen({
+  "mousemove": 1, 
+  "click": 20
+}, true)</pre>
+        <pre class="fl mr">
+.listen({
+  "keypress": 0, 
+  "resize": 0
+}, true)</pre>
+        <pre class="fl">
+.listen({
+  "blur": 5, 
+  "focus": 5
+}, false)</pre>
+         <pre class="mt clear">
+.adapt({
+  "#foo > p ul": ["font-size", "color", "margin-left"],
+  ".my input[type='text']": ["border-color", "border-width"]
+}, document.getElementById("bar"))</pre>
+        </div>
+      </article>
+                                        
+      <article>
+        <h2>System Overview</h2>
+        <h3>Scoring scheme</h3>
+        <img class="centered mt" src="figs/eq-scoring.jpg" />
+      </article>
+      
+      <article>
+        <h2>System Overview</h2>
+        <h3>Smooth adaptation</h3>
+        <img class="mt centered" width="400" src="figs/smooth-fn2-nonum.png" />
+      </article>  
+
+      <article id="examples">
+        <h2>Examples</h2>
+        <img class="mt centered" src="figs/sample-page.jpg" />
+      </article>
+      
+      <article>
+        <h2>Examples</h2>
+        <img class="mt centered" src="figs/sample-page-tracking.jpg" />
+      </article>
+      
+      <!-- sample 1 -->
+      <article>
+        <h2>Examples</h2>
+        <pre>&lt;script type="text/javascript"&gt;        
+ACE.adapt({
+  "div a": ["font-size", "color"],    &#10122
+  "p ul" : ["font-weight", "margin"]  &#10123
+});
+&lt;/script&gt;</pre>
+        <img class="centered" src="figs/sample-dom-space.png" />
+      </article>
+      
+      <article>
+        <h2>Examples</h2>
+        <img class="mt centered" src="figs/sample-page-space.jpg" />
+      </article>
+      
+      <!-- sample 2 -->
+      <article>
+        <h2>Examples</h2>
+        <pre>&lt;script type="text/javascript"&gt;        
+ACE.adapt({
+  "div + a": ["font-size", "color"],    &#10124
+  "p + ul" : ["font-weight", "margin"]  &#10125
+});
+&lt;/script&gt;</pre>
+        <img class="centered" src="figs/sample-dom-plus.png" />
+      </article>
+      
+      <article>
+        <h2>Examples</h2>
+        <img class="mt centered" src="figs/sample-page-plus.jpg" />
+      </article>
+      
+      <!-- sample 3 -->
+      <article>
+        <h2>Examples</h2>
+        <pre>&lt;script type="text/javascript"&gt;        
+ACE.adapt({
+  "div ~ a": ["font-size", "color"],    &#10126
+  "p ~ ul" : ["font-weight", "margin"]  &#10127
+});
+&lt;/script&gt;</pre>
+        <img class="centered" src="figs/sample-dom-sim.png" />
+      </article>
+        
+      <article>
+        <h2>Examples</h2>
+        <img class="mt centered" src="figs/sample-page-sim.jpg" />
+      </article>
+      
+      <article id="eval">
+        <h2>Evaluation</h2>
+        <p>Informal study with 12 users</p>
+        <ul class="nolist build">
+          <li><strong>Q1</strong> Do you think page elements are well laid out?</li>
+          <li><strong>Q2</strong> Did you notice any change on the page?</li>
+          <li><strong>Q3</strong> If so, did you find distracting those changes?</li>
+          <li><img class="mt centered" width="100%" src="figs/questions.png" /></li>
+        </ul>
+      </article>
+
+      <article id="future">
+        <h2>Conclusion</h2>
+        <ul class="build">
+          <li>A novel approach to restyle websites</li>
+          <li>No end-user intervention</li>
+          <li>Attentive, smooth adaptation</li>
+        </ul>
+      </article>
+      
+      <article id="future">
+        <h2>Future Work</h2>
+        <ul class="build">
+          <li>Handle non-numerical properties (e.g. <tt>text-align</tt>)</li>
+          <li>Handle other user signals (e.g. biometrics)</li>
+          <li>Run a formal user evaluation</li>
+        </ul>
+      </article>
+      
+      <article>
+        <h2>Future Work</h2>
+        <img class="mt centered" src="figs/controlpanel-new.jpg" />
+        <p>Luis A. Leiva. <em>Automatic Web Design Refinements based on Collective User Behavior</em>. Proc. CHI EA, 2012.</p>
+      </article>
+                                                   
+      <article>
+        <h2>Thank you!</h2>
+        <ul>
+          <li>Video at <a href="http://vimeo.com/luileito/ace-www">http://vimeo.com/luileito/ace-www</a></li>
+          <li>Demo at <a href="http://personales.upv.es/luileito/ace/">http://personales.upv.es/luileito/ace/</a></li>
+          <li>Code at <a href="https://github.com/luileito/ace">https://github.com/luileito/ace</a></li>
+        </ul>
+        <div class="mt smaller">
+          <table class="center noborder">
+          <tr>
+            <td>
+              <img width="220" src="figs/sample-page-space.jpg" />
+            </td>
+            <td>
+              <img width="220" src="figs/sample-page-plus.jpg" />
+            </td>
+            <td>
+              <img width="220" src="figs/sample-page-sim.jpg" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img width="220" src="figs/sample-dom-space.png" />
+            </td>
+            <td>
+              <img width="220" src="figs/sample-dom-plus.png" />
+            </td>
+            <td>
+              <img width="220" src="figs/sample-dom-sim.png" />
+            </td>
+          </tr>
+          </table>
+        </div>
+      </article>
+
+    </section>
+
+  </body>
+</html>

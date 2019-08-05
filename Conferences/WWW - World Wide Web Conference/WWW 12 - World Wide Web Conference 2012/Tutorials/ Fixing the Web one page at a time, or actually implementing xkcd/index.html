@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Fixing the Web One Page at a Time, or Actually Implementing xkcd #37</title>
+	<meta name="viewport" content="width=1024, user-scalable=no">
+	
+	<link rel="stylesheet" href="deck.js/core/deck.core.css">
+	<link rel="stylesheet" href="deck.js/extensions/goto/deck.goto.css">
+	<link rel="stylesheet" href="deck.js/extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="deck.js/extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="deck.js/extensions/status/deck.status.css">
+	<link rel="stylesheet" href="deck.js/extensions/hash/deck.hash.css">
+	
+	<link rel="stylesheet" href="deckjs-mmlab.css">
+	<script src="deck.js/modernizr.custom.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="deck.js/jquery-1.7.min.js"><\/script>')</script>
+</head>
+
+<body class="deck-container">
+
+<section class="slide" id="title">
+	<h1>Fixing the Web One&nbsp;Page at a Time, or&nbsp;Actually Implementing xkcd #37</h1>
+  <p class="authors">
+    <a href="http://twitter.com/tomayac">Thomas Steiner</a>,
+    <a href="http://twitter.com/RubenVerborgh">Ruben Verborgh</a>,
+    <a href="http://twitter.com/rvdwalle">Rik Van de Walle</a>
+  </p>
+</section>
+
+<section class="slide" id="spot-the-errors">
+  <h2>Spot the errors</h2>
+  <p class="errors" style="width: 645px; text-align: justify; text-indent: -10px; padding-left: 10px; margin: 2em auto; cursor: pointer">
+    <span class="quote"><span class="wrongquote">&quot;</span><span class="rightquote">&ldquo;</span></span>The
+    World Wide Web<span class="dash"> - </span>a system of interlinked hypertext documents,
+    <span class="linebreak">a provider</span> of endless <span class="oxford">knowledge and</span>
+    a source of kitten pictures<span class="dash"> - </span>is unfortunately seriously
+    broken<span class="ellipsis">...</span><span class="quote"><span class="wrongquote">&quot;</span><span class="rightquote">&rdquo;</span></span>
+    <span class="smiley">:-(&nbsp;&nbsp;</span>
+  <p>
+  <p id="mistakes" style="text-align: right; color: #bb0000"></p>
+</section>
+<script>
+  var foundMistakes = {},
+      foundMistakesCount = 0,
+      $mistakes = $('#mistakes');
+  function prepareMistake(cssClass, replacement) {
+    var $items = $('p.errors .' + cssClass).click(function () {
+      // check if already fixed
+      if(foundMistakes[cssClass])
+        return;
+      foundMistakes[cssClass] = true;
+      // fix
+      if (typeof(replacement) === 'string')
+        $items.text(replacement);
+      else
+        replacement();
+      // indicate count
+      $mistakes.text(++foundMistakesCount + ' mistake' + (foundMistakesCount == 1 ? '' : 's') + ' found');
+    });
+  }
+  
+  $('.rightquote').hide();
+  
+  prepareMistake('dash', '—');
+  prepareMistake('linebreak', 'a provider');
+  prepareMistake('smiley', ':-(');
+  prepareMistake('ellipsis', '…');
+  prepareMistake('oxford', 'knowledge, and');
+  prepareMistake('quote', function () { $('.wrongquote').hide(); $('.rightquote').show(); })
+</script>
+
+<section class="slide" id="common-errors">
+  <h2>Common pollutants on the Web</h2>
+  <ul>
+    <li>Dots instead of ellipsis</li>
+    <li>Missing Oxford comma</li>
+    <li>Hyphens instead of dashes</li>
+    <li>Typewriter quotes</li>
+    <li>Bad line-breaking</li>
+  </ul>
+</section>
+
+<section class="slide" id="xkcd37">
+  <h2>…and most importantly:<br> the [adjective]-ass [noun] case</h2>
+  <figure>
+    <img src="hyphen.jpg" height="500px" />
+    <figcaption style="font-size: 12pt; text-align: center;">R. Munroe. <a target="_blank" href="http://xkcd.com/37/">Hyphen</a>.</figcaption>
+  </figure>
+</section>
+
+<section class="slide" id="serious">
+  <h2 style="font-size: 3em; text-align: center">
+  This<br>is a serious situation.
+  </h2>
+</section>
+
+<section class="slide" id="fix">
+  <h2 style="font-size: 3em; text-align: center">
+  What if the Web could fix itself
+  one page at a time?
+  </h2>
+</section>
+
+<section class="slide" id="app">
+  <h2 style="font-size: 3em; text-align: center">
+  There is<br>an app<br>for that!
+  </h2>
+</section>
+
+<section class="slide" id="extension">
+  <h2>Introducing the xkcd#37 extension</h2>
+  <ul>
+    <li>Chrome extension at <a target="_blank" href="http://bit.ly/xkcd37">bit.ly/xkcd37</a></li>
+    <li>
+      Highly customizable
+      <ul>
+        <li>deals with all of the aforementioned pollutants</li>
+        <li><em>plus</em> your personal annoyances</li>
+      </ul>
+    </li>
+    <li>Enjoy the Web again</li>
+    <li>Browse without fear</li>
+    <li>Fixes the Web once and for all</li>
+  </ul>
+</section>
+
+<section class="slide" id="regexp">
+  <h2>Easy to fix with regular expressions</h2>
+  <ul>
+    <li>
+      Example: ellipsis
+      <ul>
+        <li><code>\.\.\.</code> becomes <code>&amp;hellip;</code></li>
+      </ul>
+    </li>
+    <li>
+      Example: avoid orphan &lsquo;<em>a</em>&rsquo;s
+      <ul>
+        <li><code>(\ba)\s(\w+\b)</code> becomes <code>$1&amp;nbsp;$2</code></li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section class="slide" id="functions">
+  <h2>How to fix that dumb-ass xkcd #37?</h2>
+  <ul>
+    <li>
+      Regular expression with function replacement
+      <ul>
+        <li>[adjective]-ass [noun]</li>
+        <li><code>(\w+)-(ass)(\s+)(\w+)</code></li>
+      </ul>
+    </li>
+    <li>
+      Part-of-speech tagging <em>(Brill, 1992)</em>
+      <ul>
+        <li><code>$1</code> should be an adjective</li>
+        <li><code>$4</code> should be a noun</li>
+        <li><em>donkey-ass picture</em>: <strong>OK</strong></li>
+        <li><em>smart-ass picture</em>: <strong>smart ass-picture</strong></li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section class="slide" id="text-nodes">
+  <h2>How to get all the text nodes?</h2>
+  <ul>
+    <li>
+      XPath
+      <ul><li>the classical option</li></ul>
+    </li>
+    <li>
+      Recursive
+      <ul><li>the hand-crafted option</li></ul>
+    </li>
+    <li>
+      TreeWalker
+      <ul><li>the cool API option</li></ul>
+    </li>
+  </ul>
+  <p>Let's test which one is the fastest: <a style="letter-spacing: 2px" target="_blank" href="http://bit.ly/xkcdperf">bit.ly/xkcdperf</a></p>
+</section>
+
+<section class="slide" id="dynamic">
+  <h2>We still need to fix dynamic pages</h2>
+  <ul>
+    <li>Static pages have been covered</li>
+    <li>
+      Dynamic pages are omnipresent
+      <ul>
+        <li>Twitter, Gmail, and many others</li>
+      </ul>
+    </li>
+    <li>
+      Listen to DOM events
+      <ul>
+        <li><code>DOMCharacterDataModified</code></li>
+        <li><code>DOMSubtreeModified</code></li>
+      </ul>
+    </li>
+    <li>
+      Special attention to <code>&lt;title&gt;</code>
+    </li>
+  </ul>
+</section>
+
+<section class="slide" id="demo">
+  <h2>Enough. Let's fix the Web!</h2>
+  <ul>
+    <li>Install the extension at <a target="_blank" href="http://bit.ly/xkcd37">bit.ly/xkcd37</a></li>
+  </ul>
+</section>
+
+<section class="slide" id="awesome">
+  <h2>Isn't that awesome?</h2>
+  <ul>
+    <li><a target="_blank" href="https://twitter.com/search/awesome">Let's check Twitter</a></li>
+  </ul>
+</section>
+
+<section class="slide" id="change-your-life">
+  <h2>Tired of browsing a broken Web?</h2>
+  <ul>
+    <li>Change your life with <a target="_blank" href="http://bit.ly/xkcd37">bit.ly/xkcd37</a></li>
+    <li>
+      Share your annoyances on Twitter <code>#xkcd37</code>
+      <ul>
+        <li><a target="_blank" href="http://twitter.com/tomayac">@tomayac</a></li>
+        <li><a target="_blank" href="http://twitter.com/RubenVerborgh">@RubenVerborgh</a></li>
+      </ul>
+    </li>
+    <li>Fixing the Web? Yes we can!</li>
+  </ul>
+</section>
+
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+<script src="deck.js/core/deck.core.js"></script>
+<script src="deck.js/extensions/hash/deck.hash.js"></script>
+<script src="deck.js/extensions/navigation/deck.navigation.js"></script>
+<script>$(function(){$.deck($('.slide').wrapInner('<div class="outer"><div class="inner">'));});</script>
+</body>
+</html>
