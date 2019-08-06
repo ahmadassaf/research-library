@@ -66,74 +66,87 @@ This repo tracks the conferences, workshops and journals I am interested in. The
 
 # Research Papers Repositories & Search Engines
 
-- [ACL Anthology](https://aclweb.org/anthology/)
-
+<details><summary><a href="https://aclweb.org/anthology/">ACL Anthology</a></summary>
+    <p>
     The ACL Anthology currently hosts papers on the study of computational linguistics and natural language processing.
-
-- [CEUR Workshop Proceedings](http://ceur-ws.org/)
-
+    </p>
+</details>
+<details><summary><a href="http://ceur-ws.org/">CEUR Workshop Proceedings</a></summary>
+    <p>
     Online Proceedings for Scientific Conferences and Workshops
-
     Computer Science - Information Systems - Information Technology
-
-- [Science Direct](https://www.sciencedirect.com)
-
+    </p>
+</details>
+<details><summary><a href="https://www.sciencedirect.com">Science Direct</a></summary>
+    <p>
     Explore scientific, technical, and medical research on ScienceDirect
-
     Requires registration
-
-- [Semantic Web Journal](http://www.semantic-web-journal.net/)
-
-    The journal *Semantic Web – Interoperability, Usability, Applicability* (published and printed by IOS Press, ISSN: 1570-0844), in short *Semantic Web journal*, brings together researchers from various fields which share the vision and need for more effective and meaningful ways to share information across agents and services on the future internet and elsewhere. As such, Semantic Web technologies shall support the seamless integration of data, on-the-fly composition and interoperation of Web services, as well as more intuitive search engines. 
-
+    </p>
+</details>   
+<details><summary><a href="http://www.semantic-web-journal.net/">Semantic Web Journal</a></summary>
+    <p>
+    The journal <strong>Semantic Web – Interoperability, Usability, Applicability</strong> in short <i>Semantic Web journal</i>, brings together researchers from various fields which share the vision and need for more effective and meaningful ways to share information across agents and services on the future internet and elsewhere. As such, Semantic Web technologies shall support the seamless integration of data, on-the-fly composition and interoperation of Web services, as well as more intuitive search engines. 
     The semantics – or meaning – of information, however, cannot be defined without a context, which makes personalization, trust, and provenance core topics for Semantic Web research. New retrieval paradigms, user interfaces, and visualization techniques have to unleash the power of the Semantic Web and at the same time hide its complexity from the user. Based on this vision, the journal welcomes contributions ranging from theoretical and foundational research over methods and tools to descriptions of concrete ontologies and applications in all areas. We especially welcome papers which add a social, spatial, and temporal dimension to Semantic Web research, as well as application-oriented papers making use of formal semantics.
-
     The journal is peer-reviewed and will be published bimonthly.
-
-- [Research Gate](https://www.researchgate.net)
-
+    </p>
+</details> 
+<details><summary><a href="https://www.researchgate.net">Research Gate</a></summary>
+    <p>
     ResearchGate is the professional network for scientists and researchers. Over 15 million members from all over the world use it to share, discover, and discuss
-
-- [Academia](https://www.academia.edu/)
-
+    </p>
+</details> 
+<details><summary><a href="https://www.academia.edu/">Academia</a></summary>
+    <p>
     Academia.edu is a platform for academics to share research papers. The company's mission is to accelerate the world's research.
-
     Academics use Academia.edu to share their research, monitor deep analytics around the impact of their research, and track the research of academics they follow.
-
-- [Now Publishers](https://www.nowpublishers.com/)
-
+    </p>
+</details> 
+<details><summary><a href="https://www.nowpublishers.com/">Now Publishers</a></summary>
+    <p>
     Now publishers is an international press that has built a reputation among readers, authors, editors and librarians as a source of excellent peer-reviewed publications in Business, Economics, Computer Science and Engineering. As much debate focuses on new business models and delivery methods in scientific and academic publishing
-
-- [arXiv](https://arxiv.org/)
-
+    </p>
+</details> 
+<details><summary><a href="https://arxiv.org/">arXiv</a></summary>
+    <p>
     arXiv® is an e-print service in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics. Submissions to arXiv should conform to Cornell University academic standards.
-
-- [SciHub](https://sci-hub.tw)
-
+    </p>
+</details>   
+<details><summary><a href="https://sci-hub.tw">SciHub</a></summary>
+    <p>
     Sci-Hub: removing barriers in the way of science. It is a website that provides free access to millions of research papers and books, without regard to copyright, by bypassing publishers' paywalls in various ways.
-
-    Is Sci-Hub down, not working, or blocked? [Where Is Sci-Hub Now](https://whereisscihub.now.sh/) always lists several alternative working links to active Sci-Hub mirrors.
-
-- [Hal Archives](https://hal.archives-ouvertes.fr/)
-
+    Is Sci-Hub down, not working, or blocked? <a href="https://whereisscihub.now.sh">Where Is Sci-Hub Now</a> always lists several alternative working links to active Sci-Hub mirrors.
+    </p>
+</details>
+<details><summary><a href="https://hal.archives-ouvertes.fr/">Hal Archives</a></summary>
+    <p>
     HAL is an open archive where authors can deposit scholarly documents from all academic fields.
-
-- [Semantic Scholar](https://www.semanticscholar.org/)
-
+    </p>
+</details>
+<details><summary><a href="https://www.semanticscholar.org/">Semantic Scholar</a></summary>
+    <p>
     Find peer-reviewed research from the world's most trusted sources
-
-- [VLDB - Very Large Databases Archive](http://vldb.org/)
-
+    </p>
+</details>
+<details><summary><a href="http://vldb.org/">VLDB - Very Large Databases Archive</a></summary>
+    <p>
     Very Large Data Base Endowment Inc. (VLDB Endowment) is a non-profit organisation incorporated in the United States for the sole purpose of promoting and exchanging scholarly work in databases and related fields throughout the world
-
-- [ACM Proceedings](https://dl.acm.org/proceedings.cfm)
-- [CiteSeerX](http://csxstatic.ist.psu.edu)
-
+    </p>
+</details>  
+<details><summary><a href="https://dl.acm.org/proceedings.cfm">ACM Proceedings</a></summary>
+    <p>
+    The ACM International Conference Proceeding Series (ICPS) provides a mechanism to publish the contents of conferences, technical symposia and workshops and thereby increase their visibility among the international computing community. The goal of this program is to enable conferences and workshops to cost effectively produce print proceedings for their attendees, while also providing maximum dissemination of the material through electronic channels, specifically, the ACM Digital Library.
+    </p>
+</details>  
+<details><summary><a href="http://csxstatic.ist.psu.edu">CiteSeerX</a></summary>
+    <p>
     CiteSeerx is an evolving scientific literature digital library and search engine that has focused primarily on the literature in computer and information science. CiteSeerx aims to improve the dissemination of scientific literature and to provide improvements in functionality, usability, availability, cost, comprehensiveness, efficiency, and timeliness in the access of scientific and scholarly knowledge.
-
-- [Sciweavers](http://96.87.153.69/)
-
+    </p>
+</details>  
+<details><summary><a href="http://96.87.153.69/">Sciweavers</a></summary>
+    <p>
     Sciweavers is an academic network that aggregates links to research paper preprints then categorizes them into proceedings. The preprint links of a given proceedings are sorted using different mechanisms derived from our traffic to help researchers quickly discover top ranked papers. Also, Sciweavers offers several free online tools to improve your productivity.
+    </p>
+</details>      
 
 # Conferences Archive
 
