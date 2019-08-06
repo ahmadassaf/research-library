@@ -83,19 +83,19 @@ This repo tracks the conferences, workshops and journals I am interested in. The
     Requires registration
     </p>
 </details>   
-<details><summary><a href="http://www.semantic-web-journal.net/">Semantic Web Journal</a></summary>
+<details open="true"><summary><a href="http://www.semantic-web-journal.net/">Semantic Web Journal</a></summary>
     <p>
     The journal <strong>Semantic Web – Interoperability, Usability, Applicability</strong> in short <i>Semantic Web journal</i>, brings together researchers from various fields which share the vision and need for more effective and meaningful ways to share information across agents and services on the future internet and elsewhere. As such, Semantic Web technologies shall support the seamless integration of data, on-the-fly composition and interoperation of Web services, as well as more intuitive search engines. 
     The semantics – or meaning – of information, however, cannot be defined without a context, which makes personalization, trust, and provenance core topics for Semantic Web research. New retrieval paradigms, user interfaces, and visualization techniques have to unleash the power of the Semantic Web and at the same time hide its complexity from the user. Based on this vision, the journal welcomes contributions ranging from theoretical and foundational research over methods and tools to descriptions of concrete ontologies and applications in all areas. We especially welcome papers which add a social, spatial, and temporal dimension to Semantic Web research, as well as application-oriented papers making use of formal semantics.
     The journal is peer-reviewed and will be published bimonthly.
     </p>
 </details> 
-<details><summary><a href="https://www.researchgate.net">Research Gate</a></summary>
+<details open="true"><summary><a href="https://www.researchgate.net">Research Gate</a></summary>
     <p>
     ResearchGate is the professional network for scientists and researchers. Over 15 million members from all over the world use it to share, discover, and discuss
     </p>
 </details> 
-<details><summary><a href="https://www.academia.edu/">Academia</a></summary>
+<details open="true"><summary><a href="https://www.academia.edu/">Academia</a></summary>
     <p>
     Academia.edu is a platform for academics to share research papers. The company's mission is to accelerate the world's research.
     Academics use Academia.edu to share their research, monitor deep analytics around the impact of their research, and track the research of academics they follow.
