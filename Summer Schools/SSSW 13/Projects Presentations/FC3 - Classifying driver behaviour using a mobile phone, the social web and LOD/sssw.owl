@@ -1,0 +1,1065 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY o "http://sssw.org/otters#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://sssw.org/otters#"
+     xml:base="http://sssw.org/otters"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:o="http://sssw.org/otters#">
+    <owl:Ontology rdf:about="http://sssw.org/otters"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sssw.org/otters#correspondsTo -->
+
+    <owl:ObjectProperty rdf:about="&o;correspondsTo">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sssw.org/otters#hasCountryProfile -->
+
+    <owl:ObjectProperty rdf:about="&o;hasCountryProfile">
+        <rdfs:subPropertyOf rdf:resource="&o;hasProfile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sssw.org/otters#hasDriverProfile -->
+
+    <owl:ObjectProperty rdf:about="&o;hasDriverProfile">
+        <rdfs:subPropertyOf rdf:resource="&o;hasProfile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sssw.org/otters#hasPosition -->
+
+    <owl:ObjectProperty rdf:about="&o;hasPosition">
+        <rdfs:domain rdf:resource="&o;PhoneData"/>
+        <rdfs:range rdf:resource="&o;Region"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sssw.org/otters#hasProfile -->
+
+    <owl:ObjectProperty rdf:about="&o;hasProfile"/>
+    
+
+
+    <!-- http://sssw.org/otters#hasWeather -->
+
+    <owl:ObjectProperty rdf:about="&o;hasWeather"/>
+    
+
+
+    <!-- http://sssw.org/otters#partOf -->
+
+    <owl:ObjectProperty rdf:about="&o;partOf"/>
+    
+
+
+    <!-- http://sssw.org/otters#weatherOf -->
+
+    <owl:ObjectProperty rdf:about="&o;weatherOf">
+        <rdfs:domain rdf:resource="&o;Weather"/>
+        <owl:inverseOf rdf:resource="&o;hasWeather"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sssw.org/otters#fromTime -->
+
+    <owl:DatatypeProperty rdf:about="&o;fromTime">
+        <rdfs:subPropertyOf rdf:resource="&o;hasTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sssw.org/otters#hasPenalty -->
+
+    <owl:DatatypeProperty rdf:about="&o;hasPenalty">
+        <rdfs:domain rdf:resource="&o;PhoneData"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sssw.org/otters#hasPenaltyFactor -->
+
+    <owl:DatatypeProperty rdf:about="&o;hasPenaltyFactor"/>
+    
+
+
+    <!-- http://sssw.org/otters#hasRainyOverspeedingFactor -->
+
+    <owl:DatatypeProperty rdf:about="&o;hasRainyOverspeedingFactor">
+        <rdfs:subPropertyOf rdf:resource="&o;hasPenaltyFactor"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sssw.org/otters#hasRainyOverspeedingPenalty -->
+
+    <owl:DatatypeProperty rdf:about="&o;hasRainyOverspeedingPenalty">
+        <rdfs:subPropertyOf rdf:resource="&o;hasPenalty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sssw.org/otters#hasScore -->
+
+    <owl:DatatypeProperty rdf:about="&o;hasScore"/>
+    
+
+
+    <!-- http://sssw.org/otters#hasSpeed -->
+
+    <owl:DatatypeProperty rdf:about="&o;hasSpeed"/>
+    
+
+
+    <!-- http://sssw.org/otters#hasSpeedLimit -->
+
+    <owl:DatatypeProperty rdf:about="&o;hasSpeedLimit">
+        <rdfs:subPropertyOf rdf:resource="&o;hasSpeed"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sssw.org/otters#hasTime -->
+
+    <owl:DatatypeProperty rdf:about="&o;hasTime">
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sssw.org/otters#rainfall -->
+
+    <owl:DatatypeProperty rdf:about="&o;rainfall">
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sssw.org/otters#rainyLimit -->
+
+    <owl:DatatypeProperty rdf:about="&o;rainyLimit"/>
+    
+
+
+    <!-- http://sssw.org/otters#toTime -->
+
+    <owl:DatatypeProperty rdf:about="&o;toTime">
+        <rdfs:subPropertyOf rdf:resource="&o;hasTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sssw.org/otters#Area -->
+
+    <owl:Class rdf:about="&o;Area"/>
+    
+
+
+    <!-- http://sssw.org/otters#Country -->
+
+    <owl:Class rdf:about="&o;Country">
+        <rdfs:subClassOf rdf:resource="&o;Area"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sssw.org/otters#CountryProfile -->
+
+    <owl:Class rdf:about="&o;CountryProfile">
+        <rdfs:subClassOf rdf:resource="&o;Profile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sssw.org/otters#Driver -->
+
+    <owl:Class rdf:about="&o;Driver">
+        <rdfs:subClassOf rdf:resource="&o;Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&o;hasDriverProfile"/>
+                <owl:someValuesFrom rdf:resource="&o;DriverProfile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://sssw.org/otters#DriverBehavior -->
+
+    <owl:Class rdf:about="&o;DriverBehavior"/>
+    
+
+
+    <!-- http://sssw.org/otters#DriverProfile -->
+
+    <owl:Class rdf:about="&o;DriverProfile">
+        <rdfs:subClassOf rdf:resource="&o;Profile"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&o;hasScore"/>
+                <owl:someValuesFrom rdf:resource="&xsd;float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://sssw.org/otters#DryWeather -->
+
+    <owl:Class rdf:about="&o;DryWeather">
+        <rdfs:subClassOf rdf:resource="&o;Weather"/>
+        <owl:disjointWith rdf:resource="&o;RainyWeather"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sssw.org/otters#Overspeeding -->
+
+    <owl:Class rdf:about="&o;Overspeeding">
+        <rdfs:subClassOf rdf:resource="&o;DriverBehavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sssw.org/otters#Penalty -->
+
+    <owl:Class rdf:about="&o;Penalty"/>
+    
+
+
+    <!-- http://sssw.org/otters#Person -->
+
+    <owl:Class rdf:about="&o;Person"/>
+    
+
+
+    <!-- http://sssw.org/otters#PhoneData -->
+
+    <owl:Class rdf:about="&o;PhoneData"/>
+    
+
+
+    <!-- http://sssw.org/otters#Profile -->
+
+    <owl:Class rdf:about="&o;Profile"/>
+    
+
+
+    <!-- http://sssw.org/otters#RainyOverspeedingPenalty -->
+
+    <owl:Class rdf:about="&o;RainyOverspeedingPenalty">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&o;hasRainyOverspeedingPenalty"/>
+                <owl:someValuesFrom rdf:resource="&xsd;float"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&o;Penalty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sssw.org/otters#RainyWeather -->
+
+    <owl:Class rdf:about="&o;RainyWeather">
+        <rdfs:subClassOf rdf:resource="&o;Weather"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sssw.org/otters#Region -->
+
+    <owl:Class rdf:about="&o;Region">
+        <rdfs:subClassOf rdf:resource="&o;Area"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&o;partOf"/>
+                <owl:someValuesFrom rdf:resource="&o;Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&o;hasSpeedLimit"/>
+                <owl:someValuesFrom rdf:resource="&xsd;integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://sssw.org/otters#Weather -->
+
+    <owl:Class rdf:about="&o;Weather">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&o;fromTime"/>
+                <owl:someValuesFrom rdf:resource="&xsd;dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&o;toTime"/>
+                <owl:someValuesFrom rdf:resource="&xsd;dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&o;rainfall"/>
+                <owl:someValuesFrom rdf:resource="&xsd;float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sssw.org/otters#countryProfile -->
+
+    <owl:NamedIndividual rdf:about="&o;countryProfile">
+        <rdf:type rdf:resource="&o;CountryProfile"/>
+        <rainyLimit rdf:datatype="&xsd;float">1.0</rainyLimit>
+        <hasRainyOverspeedingFactor rdf:datatype="&xsd;float">4.0</hasRainyOverspeedingFactor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sssw.org/otters#currentCountry -->
+
+    <owl:NamedIndividual rdf:about="&o;currentCountry">
+        <rdf:type rdf:resource="&o;Country"/>
+        <hasCountryProfile rdf:resource="&o;countryProfile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sssw.org/otters#currentPhoneData -->
+
+    <owl:NamedIndividual rdf:about="&o;currentPhoneData">
+        <rdf:type rdf:resource="&o;PhoneData"/>
+        <hasSpeed rdf:datatype="&xsd;integer">126</hasSpeed>
+        <hasTime rdf:datatype="&xsd;dateTime">2013-07-11T06:00:00</hasTime>
+        <hasPosition rdf:resource="&o;currentRegion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sssw.org/otters#currentRegion -->
+
+    <owl:NamedIndividual rdf:about="&o;currentRegion">
+        <rdf:type rdf:resource="&o;Region"/>
+        <hasSpeedLimit rdf:datatype="&xsd;integer">120</hasSpeedLimit>
+        <partOf rdf:resource="&o;currentCountry"/>
+        <hasWeather rdf:resource="&o;currentWeather"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sssw.org/otters#currentWeather -->
+
+    <owl:NamedIndividual rdf:about="&o;currentWeather">
+        <rdf:type rdf:resource="&o;Weather"/>
+        <rainfall rdf:datatype="&xsd;float">2.0</rainfall>
+        <fromTime rdf:datatype="&xsd;dateTime">2013-07-11T00:00:00</fromTime>
+        <toTime rdf:datatype="&xsd;dateTime">2013-07-11T12:00:00</toTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl#data">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#region">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#currentSpeed">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#speedLimit">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#w">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#country">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#profile">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#r">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#limit">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#weather">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#countryProfile">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#fromDate">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#dataDate">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#toDate">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#factor">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&o;hasCountryProfile"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#countryProfile"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#data"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="&swrl;DatavaluedPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="&o;hasRainyOverspeedingFactor"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#countryProfile"/>
+                                                                <swrl:argument2 rdf:resource="urn:swrl#factor"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="&o;hasWeather"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#data"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#weather"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&o;RainyWeather"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#weather"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&o;PhoneData"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#data"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&o;Overspeeding"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#data"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&o;hasRainyOverspeedingPenalty"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#data"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#factor"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="&o;hasCountryProfile"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#country"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#profile"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="&o;partOf"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#country"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#region"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="&swrl;DatavaluedPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="&o;rainyLimit"/>
+                                                                <swrl:argument2 rdf:resource="urn:swrl#limit"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#profile"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="&swrl;BuiltinAtom"/>
+                                                                        <swrl:builtin rdf:resource="&swrlb;lessThanOrEqual"/>
+                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                            <rdf:Description rdf:about="urn:swrl#r"/>
+                                                                            <rdf:Description rdf:about="urn:swrl#limit"/>
+                                                                        </swrl:arguments>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&swrl;DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="&o;rainfall"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#r"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#w"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&o;weatherOf"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#region"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#w"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&o;Weather"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#w"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&o;DryWeather"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#w"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&o;Overspeeding"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#data"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="&o;hasPosition"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#data"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#region"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="&o;hasSpeed"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#currentSpeed"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#data"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&o;hasSpeedLimit"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#region"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#speedLimit"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&swrl;BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="&swrlb;greaterThan"/>
+                                                        <swrl:arguments rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="urn:swrl#currentSpeed"/>
+                                                            <rdf:Description rdf:about="urn:swrl#speedLimit"/>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&o;PhoneData"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#data"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest rdf:resource="&rdf;nil"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="&o;hasWeather"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#data"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#weather"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&o;hasCountryProfile"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#countryProfile"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#data"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&o;hasPosition"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#data"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#region"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="&o;weatherOf"/>
+                                                                <swrl:argument2 rdf:resource="urn:swrl#region"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#weather"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="&swrl;DatavaluedPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="&o;fromTime"/>
+                                                                        <swrl:argument2 rdf:resource="urn:swrl#fromDate"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl#weather"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="&swrl;DatavaluedPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="&o;hasTime"/>
+                                                                                <swrl:argument1 rdf:resource="urn:swrl#data"/>
+                                                                                <swrl:argument2 rdf:resource="urn:swrl#dataDate"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="&swrl;DatavaluedPropertyAtom"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="&o;toTime"/>
+                                                                                        <swrl:argument2 rdf:resource="urn:swrl#toDate"/>
+                                                                                        <swrl:argument1 rdf:resource="urn:swrl#weather"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                                                                <rdf:first>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="&swrl;BuiltinAtom"/>
+                                                                                                        <swrl:builtin rdf:resource="&swrlb;lessThanOrEqual"/>
+                                                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                                                            <rdf:Description rdf:about="urn:swrl#dataDate"/>
+                                                                                                            <rdf:Description rdf:about="urn:swrl#toDate"/>
+                                                                                                        </swrl:arguments>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:first>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="&swrl;BuiltinAtom"/>
+                                                                                                <swrl:builtin rdf:resource="&swrlb;greaterThan"/>
+                                                                                                <swrl:arguments rdf:parseType="Collection">
+                                                                                                    <rdf:Description rdf:about="urn:swrl#dataDate"/>
+                                                                                                    <rdf:Description rdf:about="urn:swrl#fromDate"/>
+                                                                                                </swrl:arguments>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="&o;partOf"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#country"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#region"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="&o;hasCountryProfile"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#country"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#countryProfile"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&o;Weather"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#weather"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&o;PhoneData"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#data"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&o;Weather"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="&o;hasCountryProfile"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#country"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#profile"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="&o;partOf"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#country"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#region"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&o;weatherOf"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#region"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#w"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&swrl;DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="&o;rainfall"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#r"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#w"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="&swrl;BuiltinAtom"/>
+                                                                        <swrl:builtin rdf:resource="&swrlb;greaterThan"/>
+                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                            <rdf:Description rdf:about="urn:swrl#r"/>
+                                                                            <rdf:Description rdf:about="urn:swrl#limit"/>
+                                                                        </swrl:arguments>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="&swrl;DatavaluedPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="&o;rainyLimit"/>
+                                                                <swrl:argument2 rdf:resource="urn:swrl#limit"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#profile"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&o;RainyWeather"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#w"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
