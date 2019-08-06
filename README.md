@@ -1,14 +1,14 @@
 
 # Conferences
 
-## [CIKM - International Conference on Information and Knowledge Management](https://github.com/ahmadassaf/research-library/blob/master/Conferences/CIKM%20-%20International%20Conference%20on%20Information%20and%20Knowledge%20Management)
+## CIKM - International Conference on Information and Knowledge Management
 
 - [CIKM - International Conference on Information and Knowledge Management 2010](https://github.com/ahmadassaf/research-library/blob/master/Conferences/CIKM%20-%20International%20Conference%20on%20Information%20and%20Knowledge%20Management/CIKM%20-%20International%20Conference%20on%20Information%20and%20Knowledge%20Management%202010)
 - [CIKM - International Conference on Information and Knowledge Management 2012](https://github.com/ahmadassaf/research-library/blob/master/Conferences/CIKM%20-%20International%20Conference%20on%20Information%20and%20Knowledge%20Management/CIKM%20-%20International%20Conference%20on%20Information%20and%20Knowledge%20Management%202012)
 
-## [ECIR - European Conference on Information Retreival Research](https://github.com/ahmadassaf/research-library/blob/master/Conferences/ECIR%20-%20European%20Conference%20on%20Information%20Retreival%20Research)
+## ECIR - European Conference on Information Retreival Research
 
-## [ESWC - European Semantic Web Conference](https://github.com/ahmadassaf/research-library/blob/master/Conferences/ESWC%20-%20European%20Semantic%20Web%20Conference)
+## ESWC - European Semantic Web Conference
 
 - [ESWC 11 - European Semantic Web Conference 2011](https://github.com/ahmadassaf/research-library/blob/master/Conferences/ESWC%20-%20European%20Semantic%20Web%20Conference/ESWC%2011%20-%20European%20Semantic%20Web%20Conference%202011)
 - [ESWC 12 - European Semantic Web Conference 2012](https://github.com/ahmadassaf/research-library/blob/master/Conferences/ESWC%20-%20European%20Semantic%20Web%20Conference/ESWC%2012%20-%20European%20Semantic%20Web%20Conference%202012)
@@ -19,20 +19,20 @@
 - [ESWC 17 - European Semantic Web Conference 2017](https://github.com/ahmadassaf/research-library/blob/master/Conferences/ESWC%20-%20European%20Semantic%20Web%20Conference/ESWC%2017%20-%20European%20Semantic%20Web%20Conference%202017)
 - [ESWC 18 - European Semantic Web Conference 2018](https://github.com/ahmadassaf/research-library/blob/master/Conferences/ESWC%20-%20European%20Semantic%20Web%20Conference/ESWC%2018%20-%20European%20Semantic%20Web%20Conference%202018)
  
-## [ICCCI - International Conference on Computational Collective Intelligence](https://github.com/ahmadassaf/research-library/blob/master/Conferences/ICCCI%20-%20International%20Conference%20on%20Computational%20Collective%20Intelligence)
+## ICCCI - International Conference on Computational Collective Intelligence
 
-## [ICWSM - International Conference on Web and Social Media](https://github.com/ahmadassaf/research-library/blob/master/Conferences/ICWSM%20-%20International%20Conference%20on%20Web%20and%20Social%20Media)
+## ICWSM - International Conference on Web and Social Media
 
 - [ICWSM - International Conference on Web and Social Media 2019](https://github.com/ahmadassaf/research-library/blob/master/Conferences/ICWSM%20-%20International%20Conference%20on%20Web%20and%20Social%20Media/ICWSM%20-%20International%20Conference%20on%20Web%20and%20Social%20Media%202019)
 
-## [IJCAI - International Joint Conferences on Artificial Intelligence](https://github.com/ahmadassaf/research-library/blob/master/Conferences/IJCAI%20-%20International%20Joint%20Conferences%20on%20Artificial%20Intelligence)
+## IJCAI - International Joint Conferences on Artificial Intelligence
 
 - [IJCAI - International Joint Conferences on Artificial Intelligence 2015](https://github.com/ahmadassaf/research-library/blob/master/Conferences/IJCAI%20-%20International%20Joint%20Conferences%20on%20Artificial%20Intelligence/IJCAI%20-%20International%20Joint%20Conferences%20on%20Artificial%20Intelligence%202015)
 - [IJCAI - International Joint Conferences on Artificial Intelligence 2016](https://github.com/ahmadassaf/research-library/blob/master/Conferences/IJCAI%20-%20International%20Joint%20Conferences%20on%20Artificial%20Intelligence/IJCAI%20-%20International%20Joint%20Conferences%20on%20Artificial%20Intelligence%202016)
 - [IJCAI - International Joint Conferences on Artificial Intelligence 2017](https://github.com/ahmadassaf/research-library/blob/master/Conferences/IJCAI%20-%20International%20Joint%20Conferences%20on%20Artificial%20Intelligence/IJCAI%20-%20International%20Joint%20Conferences%20on%20Artificial%20Intelligence%202017)
 - [IJCAI - International Joint Conferences on Artificial Intelligence 2018](https://github.com/ahmadassaf/research-library/blob/master/Conferences/IJCAI%20-%20International%20Joint%20Conferences%20on%20Artificial%20Intelligence/IJCAI%20-%20International%20Joint%20Conferences%20on%20Artificial%20Intelligence%202018)
 
-## [ISWC - International Semantic Web Conference](https://github.com/ahmadassaf/research-library/blob/master/Conferences/ISWC%20-%20International%20Semantic%20Web%20Conference)
+## ISWC - International Semantic Web Conference
 
 - [ISWC 05 - International Semantic Web Conference 2005](https://github.com/ahmadassaf/research-library/blob/master/Conferences/ISWC%20-%20International%20Semantic%20Web%20Conference/ISWC%2005%20-%20International%20Semantic%20Web%20Conference%202005)
 - [ISWC 08 - International Semantic Web Conference 2008](https://github.com/ahmadassaf/research-library/blob/master/Conferences/ISWC%20-%20International%20Semantic%20Web%20Conference/ISWC%2008%20-%20International%20Semantic%20Web%20Conference%202008)
@@ -46,11 +46,11 @@
 - [ISWC 17 - International Semantic Web Conference 2017](https://github.com/ahmadassaf/research-library/blob/master/Conferences/ISWC%20-%20International%20Semantic%20Web%20Conference/ISWC%2017%20-%20International%20Semantic%20Web%20Conference%202017)
 - [ISWC 18 - International Semantic Web Conference 2018](https://github.com/ahmadassaf/research-library/blob/master/Conferences/ISWC%20-%20International%20Semantic%20Web%20Conference/ISWC%2018%20-%20International%20Semantic%20Web%20Conference%202018)
 
-## [OTM - On The Move Conference](https://github.com/ahmadassaf/research-library/blob/master/Conferences/OTM%20-%20On%20The%20Move%20Conference)
+## OTM - On The Move Conference
 
 - [On The Move Conference 2012](https://github.com/ahmadassaf/research-library/blob/master/Conferences/OTM%20-%20On%20The%20Move%20Conference/OTM%2012%20-%20On%20The%20Move%20Conference%202012)
 
-## [RecSys - ACM Conference on Recommender Systems](https://github.com/ahmadassaf/research-library/blob/master/Conferences/RecSys%20-%20ACM%20Conference%20on%20Recommender%20Systems)
+## RecSys - ACM Conference on Recommender Systems
 
 - [RecSys - ACM Conference on Recommender Systems  2009](https://github.com/ahmadassaf/research-library/blob/master/Conferences/RecSys%20-%20ACM%20Conference%20on%20Recommender%20Systems/RecSys%20-%20ACM%20Conference%20on%20Recommender%20Systems%20%202009)
 - [RecSys - ACM Conference on Recommender Systems  2010](https://github.com/ahmadassaf/research-library/blob/master/Conferences/RecSys%20-%20ACM%20Conference%20on%20Recommender%20Systems/RecSys%20-%20ACM%20Conference%20on%20Recommender%20Systems%20%202010)
@@ -63,7 +63,7 @@
 - [RecSys - ACM Conference on Recommender Systems  2017](https://github.com/ahmadassaf/research-library/blob/master/Conferences/RecSys%20-%20ACM%20Conference%20on%20Recommender%20Systems/RecSys%20-%20ACM%20Conference%20on%20Recommender%20Systems%20%202017)
 - [RecSys - ACM Conference on Recommender Systems  2018](https://github.com/ahmadassaf/research-library/blob/master/Conferences/RecSys%20-%20ACM%20Conference%20on%20Recommender%20Systems/RecSys%20-%20ACM%20Conference%20on%20Recommender%20Systems%20%202018)
 
-## [SEMANTiCS](https://github.com/ahmadassaf/research-library/blob/master/Conferences/SEMANTiCS)
+## SEMANTiCS
 
 - [SEMANTiCS 2010](https://github.com/ahmadassaf/research-library/blob/master/Conferences/SEMANTiCS/SEMANTiCS%202010)
 - [SEMANTiCS 2011](https://github.com/ahmadassaf/research-library/blob/master/Conferences/SEMANTiCS/SEMANTiCS%202011)
@@ -75,7 +75,7 @@
 - [SEMANTiCS 2017](https://github.com/ahmadassaf/research-library/blob/master/Conferences/SEMANTiCS/SEMANTiCS%202017)
 - [SEMANTiCS 2018](https://github.com/ahmadassaf/research-library/blob/master/Conferences/SEMANTiCS/SEMANTiCS%202018)
  
-## [VLDB - International Conference on Very Large Data Bases](https://github.com/ahmadassaf/research-library/blob/master/Conferences/VLDB%20-%20International%20Conference%20on%20Very%20Large%20Data%20Bases)
+## VLDB - International Conference on Very Large Data Bases
 
 - [VLDB - International Conference on Very Large Data Bases  2010](https://github.com/ahmadassaf/research-library/blob/master/Conferences/VLDB%20-%20International%20Conference%20on%20Very%20Large%20Data%20Bases/VLDB%20-%20International%20Conference%20on%20Very%20Large%20Data%20Bases%20%202010)
 - [VLDB - International Conference on Very Large Data Bases  2011](https://github.com/ahmadassaf/research-library/blob/master/Conferences/VLDB%20-%20International%20Conference%20on%20Very%20Large%20Data%20Bases/VLDB%20-%20International%20Conference%20on%20Very%20Large%20Data%20Bases%20%202011)
@@ -87,15 +87,15 @@
 - [VLDB - International Conference on Very Large Data Bases  2017](https://github.com/ahmadassaf/research-library/blob/master/Conferences/VLDB%20-%20International%20Conference%20on%20Very%20Large%20Data%20Bases/VLDB%20-%20International%20Conference%20on%20Very%20Large%20Data%20Bases%20%202017)
 - [VLDB - International Conference on Very Large Data Bases  2018](https://github.com/ahmadassaf/research-library/blob/master/Conferences/VLDB%20-%20International%20Conference%20on%20Very%20Large%20Data%20Bases/VLDB%20-%20International%20Conference%20on%20Very%20Large%20Data%20Bases%20%202018)
  
-## [WOD - International Conference on Open Linked Data](https://github.com/ahmadassaf/research-library/blob/master/Conferences/WOD%20-%20International%20Conference%20on%20Open%20Linked%20Data)
+## WOD - International Conference on Open Linked Data
    
 - [WOD - International Conference on Open Linked Data 2012](https://github.com/ahmadassaf/research-library/blob/master/Conferences/WOD%20-%20International%20Conference%20on%20Open%20Linked%20Data/WOD%20-%20International%20Conference%20on%20Open%20Linked%20Data%202012)
 
-## [WSDM - International Conference on Web Search and Data Mining](https://github.com/ahmadassaf/research-library/blob/master/Conferences/WSDM%20-%20International%20Conference%20on%20Web%20Search%20and%20Data%20Mining)
+## WSDM - International Conference on Web Search and Data Mining
     
 - [WSDM - International Conference on Web Search and Data Mining/WSDM - International Conference on Web Search and Data Mining 2019](https://github.com/ahmadassaf/research-library/blob/master/Conferences/WSDM%20-%20International%20Conference%20on%20Web%20Search%20and%20Data%20Mining/WSDM%20-%20International%20Conference%20on%20Web%20Search%20and%20Data%20Mining%202019) 
 
-## [WWW - World Wide Web Conference](https://github.com/ahmadassaf/research-library/blob/master/Conferences/WWW%20-%20World%20Wide%20Web%20Conference)
+## WWW - World Wide Web Conference
    
 - [WWW 01 - World Wide Web Conference 2001](https://github.com/ahmadassaf/research-library/blob/master/Conferences/WWW%20-%20World%20Wide%20Web%20Conference/WWW%2001%20-%20World%20Wide%20Web%20Conference%202001)
 - [WWW 02 - World Wide Web Conference 2002](https://github.com/ahmadassaf/research-library/blob/master/Conferences/WWW%20-%20World%20Wide%20Web%20Conference/WWW%2002%20-%20World%20Wide%20Web%20Conference%202002)
@@ -117,7 +117,7 @@
 - [WWW 18 - World Wide Web Conference 2018](https://github.com/ahmadassaf/research-library/blob/master/Conferences/WWW%20-%20World%20Wide%20Web%20Conference/WWW%2018%20-%20World%20Wide%20Web%20Conference%202018)
 - [WWW 19 - World Wide Web Conference 2019](https://github.com/ahmadassaf/research-library/blob/master/Conferences/WWW%20-%20World%20Wide%20Web%20Conference/WWW%2019%20-%20World%20Wide%20Web%20Conference%202019)
 
-## [WebSci - International Web Science Conference](https://github.com/ahmadassaf/research-library/blob/master/Conferences/WebSci%20-%20International%20Web%20Science%20Conference)
+## WebSci - International Web Science Conference
 
 - [WebSci - International Web Science Conference 2012](https://github.com/ahmadassaf/research-library/blob/master/Conferences/WebSci%20-%20International%20Web%20Science%20Conference/WebSci%20-%20International%20Web%20Science%20Conference%202012)
 - [WebSci - International Web Science Conference 2013](https://github.com/ahmadassaf/research-library/blob/master/Conferences/WebSci%20-%20International%20Web%20Science%20Conference/WebSci%20-%20International%20Web%20Science%20Conference%202013)
