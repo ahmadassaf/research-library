@@ -93,7 +93,7 @@
 
 ## WSDM - International Conference on Web Search and Data Mining
     
-- [WSDM - International Conference on Web Search and Data Mining/WSDM - International Conference on Web Search and Data Mining 2019](https://github.com/ahmadassaf/research-library/blob/master/Conferences/WSDM%20-%20International%20Conference%20on%20Web%20Search%20and%20Data%20Mining/WSDM%20-%20International%20Conference%20on%20Web%20Search%20and%20Data%20Mining%202019) 
+- [WSDM - International Conference on Web Search and Data Mining 2019](https://github.com/ahmadassaf/research-library/blob/master/Conferences/WSDM%20-%20International%20Conference%20on%20Web%20Search%20and%20Data%20Mining/WSDM%20-%20International%20Conference%20on%20Web%20Search%20and%20Data%20Mining%202019) 
 
 ## WWW - World Wide Web Conference
    
