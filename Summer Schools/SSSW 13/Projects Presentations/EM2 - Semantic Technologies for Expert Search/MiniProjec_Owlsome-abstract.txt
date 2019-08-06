@@ -1,7 +1,0 @@
-Title: Semantic Technologies for Expert Search
-Subtitle: We know the perfect job for you
-
-Research in Data Mining and Semantic Web technologies has developed expressive and efficient tools for the extraction of semantics and patterns from large amounts of data. 
-With the emergence and growing popularity of social networks, problems such as providing users with useful recommendations are more and more frequent.
-In this paper we analyze such a problem by matching job recommendations based on user CV (for example for LinkedIn users).
-Notably, we define the architecture of our system, which uses CP-Nets and similarity based on LOD technologies. Finally, we exemplify its practical utility.
