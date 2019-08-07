@@ -146,7 +146,12 @@ This repo tracks the conferences, workshops and journals I am interested in. The
     <p>
     Sciweavers is an academic network that aggregates links to research paper preprints then categorizes them into proceedings. The preprint links of a given proceedings are sorted using different mechanisms derived from our traffic to help researchers quickly discover top ranked papers. Also, Sciweavers offers several free online tools to improve your productivity.
     </p>
-</details>      
+</details>   
+<details><summary><a href="https://academictorrents.com/">Academic torrents</a></summary>
+    <p>
+    A distributed system for sharing enormous datasets - for researchers, by researchers. The result is a scalable, secure, and fault-tolerant repository for data, with blazing fast download speeds. 
+    </p>
+</details>     
 
 # Conferences Archive
 
