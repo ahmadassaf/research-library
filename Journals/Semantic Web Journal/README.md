@@ -1,7 +1,6 @@
 # Semantic Web Journal
 
- - PowerAqua: supporting users in querying and exploring the Semantic Web content [[pdf]](https://github.com/ahmadassaf/research-library/blob/master/Journals/Semantic%20Web%20Journal/%20PowerAqua:%20supporting%20users%20in%20querying%20and%20exploring%20the%20Semantic%20Web%20content.pdf)
- - (Partial) User Preference Similarity as Classification-Based Model Similarity [[pdf]](https://github.com/ahmadassaf/research-library/blob/master/Journals/Semantic%20Web%20Journal/(Partial)%20User%20Preference%20Similarity%20as%20Classification-Based%20Model%20Similarity.pdf)
+  - (Partial) User Preference Similarity as Classification-Based Model Similarity [[pdf]](https://github.com/ahmadassaf/research-library/blob/master/Journals/Semantic%20Web%20Journal/(Partial)%20User%20Preference%20Similarity%20as%20Classification-Based%20Model%20Similarity.pdf)
  - 2nd Special Issue on Linked Dataset Descriptions [[pdf]](https://github.com/ahmadassaf/research-library/blob/master/Journals/Semantic%20Web%20Journal/2nd%20Special%20Issue%20on%20Linked%20Dataset%20Descriptions.pdf)
  - A Classification of Semantic Annotation Systems [[pdf]](https://github.com/ahmadassaf/research-library/blob/master/Journals/Semantic%20Web%20Journal/A%20Classification%20of%20Semantic%20Annotation%20Systems.pdf)
  - A Closer Look at the Semantic Relationship between Datalog and Description Logics [[pdf]](https://github.com/ahmadassaf/research-library/blob/master/Journals/Semantic%20Web%20Journal/A%20Closer%20Look%20at%20the%20Semantic%20Relationship%20between%20Datalog%20and%20Description%20Logics.pdf)
@@ -203,7 +202,7 @@
  - PPROC, an Ontology for Transparency in Public Procurement [[pdf]](https://github.com/ahmadassaf/research-library/blob/master/Journals/Semantic%20Web%20Journal/PPROC,%20an%20Ontology%20for%20Transparency%20in%20Public%20Procurement.pdf)
  - Paraconsistent OWL and Related Logics [[pdf]](https://github.com/ahmadassaf/research-library/blob/master/Journals/Semantic%20Web%20Journal/Paraconsistent%20OWL%20and%20Related%20Logics.pdf)
  - Personal Learning Environments on the Social Semantic Web [[pdf]](https://github.com/ahmadassaf/research-library/blob/master/Journals/Semantic%20Web%20Journal/Personal%20Learning%20Environments%20on%20the%20Social%20Semantic%20Web.pdf)
- - Preface - RR2010 Special Issue  [[pdf]](https://github.com/ahmadassaf/research-library/blob/master/Journals/Semantic%20Web%20Journal/Preface%20-%20RR2010%20Special%20Issue%20.pdf)
+ - PowerAqua: supporting users in querying and exploring the Semantic Web content [[pdf]](https://github.com/ahmadassaf/research-library/blob/master/Journals/Semantic%20Web%20Journal/PowerAqua:%20supporting%20users%20in%20querying%20and%20exploring%20the%20Semantic%20Web%20content.pdf)
  - Presenting and Preserving the Change in Taxonomic Knowledge for Linked Data [[pdf]](https://github.com/ahmadassaf/research-library/blob/master/Journals/Semantic%20Web%20Journal/Presenting%20and%20Preserving%20the%20Change%20in%20Taxonomic%20Knowledge%20for%20Linked%20Data.pdf)
  - Preventing Interoperability Problems Instead of Solving Them [[pdf]](https://github.com/ahmadassaf/research-library/blob/master/Journals/Semantic%20Web%20Journal/Preventing%20Interoperability%20Problems%20Instead%20of%20Solving%20Them.pdf)
  - PrivOnto: a Semantic Framework for the Analysis of Privacy Policies [[pdf]](https://github.com/ahmadassaf/research-library/blob/master/Journals/Semantic%20Web%20Journal/PrivOnto:%20a%20Semantic%20Framework%20for%20the%20Analysis%20of%20Privacy%20Policies.pdf)
@@ -322,7 +321,6 @@
  - Translational research combining orthologous genes and human diseases with the OGOLOD dataset [[pdf]](https://github.com/ahmadassaf/research-library/blob/master/Journals/Semantic%20Web%20Journal/Translational%20research%20combining%20orthologous%20genes%20and%20human%20diseases%20with%20the%20OGOLOD%20dataset.pdf)
  
 ## Under Review
-
 
  - A Semantic similarity measure for predicates in Linked Data [[pdf]](https://github.com/ahmadassaf/research-library/blob/master/Journals/Semantic%20Web%20Journal/Under%20Review/A%20Semantic%20similarity%20measure%20for%20predicates%20in%20Linked%20Data.pdf)
  - A map without a legend: The semantic web and knowledge evolution  [[pdf]](https://github.com/ahmadassaf/research-library/blob/master/Journals/Semantic%20Web%20Journal/Under%20Review/A%20map%20without%20a%20legend:%20The%20semantic%20web%20and%20knowledge%20evolution%20.pdf)
