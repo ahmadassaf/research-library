@@ -2,13 +2,13 @@
 
 # [e-Learning Approaches for the Linked Data Age](https://github.com/ahmadassaf/research-library/blob/master/Workshops/eLearning%20Approaches%20for%20the%20Linked%20Data%20Age)
 
-## [e-Commerce and NLP (ECNLP)](https://github.com/ahmadassaf/research-library/blob/master/Workshops/%20e-Commerce%20and%20NLP%20(ECNLP))
- [e-Commerce and NLP (ECNLP) 2019](https://github.com/ahmadassaf/research-library/blob/master/Workshops/%20e-Commerce%20and%20NLP%20(ECNLP)/%20e-Commerce%20and%20NLP%20(ECNLP)%202019)
+# [e-Commerce and NLP (ECNLP)](https://github.com/ahmadassaf/research-library/blob/master/Workshops/%20e-Commerce%20and%20NLP%20(ECNLP))
+ - [e-Commerce and NLP (ECNLP) 2019](https://github.com/ahmadassaf/research-library/blob/master/Workshops/%20e-Commerce%20and%20NLP%20(ECNLP)/%20e-Commerce%20and%20NLP%20(ECNLP)%202019)
 
 # [AI Mashup Challenge](https://github.com/ahmadassaf/research-library/blob/master/Workshops/AI%20Mashup%20Challenge)
 
 # [Ad Targeting at Scale (TargetAd)](https://github.com/ahmadassaf/research-library/blob/master/Workshops/Ad%20Targeting%20at%20Scale%20(TargetAd))
- - [Ad Targeting at Scale (TargetAd)/Ad Targeting at Scale (TargetAd) 2015](https://github.com/ahmadassaf/research-library/blob/master/Workshops/Ad%20Targeting%20at%20Scale%20(TargetAd)/Ad%20Targeting%20at%20Scale%20(TargetAd)%202015)
+ - [Ad Targeting at Scale (TargetAd) 2015](https://github.com/ahmadassaf/research-library/blob/master/Workshops/Ad%20Targeting%20at%20Scale%20(TargetAd)/Ad%20Targeting%20at%20Scale%20(TargetAd)%202015)
 
 # [Augmenting Intelligence with Bias-Aware Humans­-in-­the-­Loop (HumBL)](https://github.com/ahmadassaf/research-library/blob/master/Workshops/Augmenting%20Intelligence%20with%20Bias-Aware%20Humans­-in-­the-­Loop%20(HumBL))
  - [Augmenting Intelligence with Bias-Aware Humans­-in-­the-­Loop (HumBL) 2019](https://github.com/ahmadassaf/research-library/blob/master/Workshops/Augmenting%20Intelligence%20with%20Bias-Aware%20Humans­-in-­the-­Loop%20(HumBL)/Augmenting%20Intelligence%20with%20Bias-Aware%20Humans­-in-­the-­Loop%20(HumBL)%202019)
